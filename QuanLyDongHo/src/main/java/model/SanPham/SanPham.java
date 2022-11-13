@@ -39,7 +39,7 @@ public class SanPham {
     private String ten;
 
     @Column(name = "trang_thai")
-    private String trangthai;
+    private Integer trangthai;
 
     @Column(name = "ngay_tao")
     private Date ngayTao;

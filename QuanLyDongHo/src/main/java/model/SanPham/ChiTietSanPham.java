@@ -77,7 +77,7 @@ public class ChiTietSanPham {
     private BigDecimal giaBan;
 
     @Column(name = "trang_thai")
-    private String trangThai;
+    private Integer trangThai;
 
     @Column(name = "ngay_tao")
     private Date ngayTao;

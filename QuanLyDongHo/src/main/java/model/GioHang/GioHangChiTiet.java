@@ -55,7 +55,7 @@ public class GioHangChiTiet implements Serializable {
     private BigDecimal donGiaKhiGiam;
 
     @Column(name = "trang_thai")
-    private String trangthai;
+    private Integer trangthai;
 
     @Column(name = "ngay_tao")
     private Date ngayTao;

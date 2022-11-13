@@ -5,6 +5,7 @@
 package model.khuyenMai;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -41,4 +42,13 @@ public class hoaDonKhuyenMai {
 
     @Column(name = "don_gia")
     private BigDecimal donGia;
+    
+    @Column(name = "trang_thai")
+    private Integer trangthai;
+
+    @Column(name = "ngay_tao")
+    private Date ngayTao;
+
+    @Column(name = "ngay_sua")
+    private Date ngaySua;
 }

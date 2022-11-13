@@ -5,6 +5,7 @@
 package model.khuyenMai;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,7 +23,7 @@ import model.SanPham.ChiTietSanPham;
  */
 @Data
 @Entity
-@Table(name = "chi_tietsp_khuyen_mai")
+@Table(name = "chi_tiet_sp_khuyen_mai")
 public class chiTietSPKhuyenMai {
 
     @Id
@@ -34,10 +35,19 @@ public class chiTietSPKhuyenMai {
     private BigDecimal donGia;
 
     @ManyToOne
-    @JoinColumn(name = "Id_chi_tiepsp")
+    @JoinColumn(name = "Id_chitiepsp")
     private ChiTietSanPham chiTietSP;
 
     @ManyToOne
     @JoinColumn(name = "Id_khuyen_mai")
     private khuyenMai khuyenMai;
+    
+    @Column(name = "trang_thai")
+    private Integer trangthai;
+
+    @Column(name = "ngay_tao")
+    private Date ngayTao;
+
+    @Column(name = "ngay_sua")
+    private Date ngaySua;
 }

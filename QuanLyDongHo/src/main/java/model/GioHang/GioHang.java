@@ -68,7 +68,7 @@ public class GioHang {
     private String sdt;
 
     @Column(name = "trang_thai")
-    private int trangthai;
+    private Integer trangthai;
 
     @Column(name = "ngay_sua")
     private Date ngaySua;

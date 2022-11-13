@@ -37,6 +37,9 @@ public class KhachHang {
     @Column(name = "Ma")
     private String ma;
 
+    @Column(name = "email")
+    private String email;
+
     @Column(name = "Ten")
     private String ten;
 
@@ -65,7 +68,7 @@ public class KhachHang {
     private String quocGia;
 
     @Column(name = "trang_thai")
-    private String trangthai;
+    private Integer trangthai;
 
     @Column(name = "ngay_tao")
     private Date ngayTao;
@@ -75,7 +78,7 @@ public class KhachHang {
 
     @OneToMany(mappedBy = "khachHang", fetch = FetchType.EAGER)
     private List<HoaDon> list = new ArrayList<>();
-    
+
     @OneToMany(mappedBy = "khachHang", fetch = FetchType.EAGER)
     private List<GioHang> listt = new ArrayList<>();
 

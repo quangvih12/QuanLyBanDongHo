@@ -39,7 +39,7 @@ public class HibernatUtil {
         Properties properties = new Properties();
         properties.put(Environment.DIALECT, "org.hibernate.dialect.SQLServerDialect");
         properties.put(Environment.DRIVER, "com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=demoDuAn1");
+        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=demoDuAn2");
         properties.put(Environment.USER, "sa");
         properties.put(Environment.PASS, "111203");
         properties.put(Environment.SHOW_SQL, "true");

@@ -62,7 +62,7 @@ public class HoaDon {
     private String ngayNhan;
 
     @Column(name = "trang_thai")
-    private int trangThai;
+    private Integer trangThai;
 
     @Column(name = "Ten_Nguoi_Nhan")
     private String tenNguoiNhan;

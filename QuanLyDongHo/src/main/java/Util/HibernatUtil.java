@@ -1,27 +1,27 @@
-package Util;
+package util;
 
 //import com.mycompany.assignment.model.Grade;
 //import com.mycompany.assignment.model.Students;
 //import com.mycompany.assignment.model.Users;
-import model.GioHang.GioHang;
-import model.GioHang.GioHangChiTiet;
+import model.giohang.GioHang;
+import model.giohang.GioHangChiTiet;
 import model.KhachHang;
-import model.HoaDon.HoaDon;
-import model.HoaDon.hoaDonChiTiet;
-import model.NhanVien.ChucVu;
-import model.NhanVien.CuaHang;
-import model.NhanVien.NhanVien;
-import model.SanPham.ChiTietSanPham;
-import model.SanPham.DongSp;
-import model.SanPham.MauSac;
-import model.SanPham.NamSanXuat;
-import model.SanPham.SanPham;
+import model.hoadon.HoaDon;
+import model.hoadon.hoaDonChiTiet;
+import model.nhanvien.ChucVu;
+import model.nhanvien.CuaHang;
+import model.nhanvien.NhanVien;
+import model.sanpham.ChiTietSanPham;
+import model.sanpham.DongSp;
+import model.sanpham.MauSac;
+import model.sanpham.NamSanXuat;
+import model.sanpham.SanPham;
 
 import java.util.Properties;
-import model.SanPham.thuongHieu;
-import model.khuyenMai.chiTietSPKhuyenMai;
-import model.khuyenMai.hoaDonKhuyenMai;
-import model.khuyenMai.khuyenMai;
+import model.sanpham.thuongHieu;
+import model.khuyenmai.chiTietSPKhuyenMai;
+import model.khuyenmai.hoaDonKhuyenMai;
+import model.khuyenmai.khuyenMai;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -39,9 +39,9 @@ public class HibernatUtil {
         Properties properties = new Properties();
         properties.put(Environment.DIALECT, "org.hibernate.dialect.SQLServerDialect");
         properties.put(Environment.DRIVER, "com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=demoDuAn2");
+        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=DuAn2;encrypt=true;trustServerCertificate=true;");
         properties.put(Environment.USER, "sa");
-        properties.put(Environment.PASS, "111203");
+        properties.put(Environment.PASS, "tungnguyen");
         properties.put(Environment.SHOW_SQL, "true");
 //        gen DB tự động
 //        properties.put(Environment.HBM2DDL_AUTO, "create");

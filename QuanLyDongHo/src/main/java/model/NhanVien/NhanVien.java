@@ -2,9 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model.NhanVien;
+package model.nhanvien;
 
-import model.HoaDon.HoaDon;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import model.hoadon.HoaDon;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,15 +21,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 import lombok.Data;
-import model.GioHang.GioHang;
-import org.hibernate.annotations.GenericGenerator;
+import model.giohang.GioHang;
 
 /**
- *
  * @author asus_vinh
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "Nhan_Vien")
 public class NhanVien {
@@ -86,6 +90,6 @@ public class NhanVien {
     @OneToMany(mappedBy = "nhanVien", fetch = FetchType.EAGER)
     private List<HoaDon> listt = new ArrayList<>();
 
-     @OneToMany(mappedBy = "idNV", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "idNV", fetch = FetchType.EAGER)
     private List<GioHang> lists = new ArrayList<>();
 }

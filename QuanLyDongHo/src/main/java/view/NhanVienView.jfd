@@ -1,0 +1,140 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.4.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp tabbedPane1::l::1853:x}"
+			"$verticalGroup": "par l {comp tabbedPane1::l::1054:x}"
+		} ) {
+			name: "this"
+			"title": "Quản lý nhân viên"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				"preferredSize": new java.awt.Dimension( 1863, 1133 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1::::1841:x, space :::p}, seq l {space :p:139:p, par t {seq t {par t:::p {seq l {par t {comp label3::l:p::p, comp label4::l:p::p}, space :0:0:x}, seq l {par t {comp label2::l:p::p, comp label8::l:p::p, comp label5::l:p::p, comp label6::l:p::p}, space :::x}}, par l:::p {comp txtNgaySinh:::::x, comp txtHoDem:::::x, comp txtTen::l:::x, comp txtGioiTinh::l:::x, comp txtDiaChi::l:::x, comp txtSDT::l:::x, comp btnClear::l:p:200:p}}, seq t {comp label1:::p::p, space :::p, comp txtMaNV:::p:200:p}}, space :p:289:p, par l {comp btnAdd:2::p::p, comp btnUpdate:2::p::p}, space ::454:x, comp panel2:::p:289:p, space :p:319:p}}"
+					"$verticalGroup": "par l {seq l {par l:::p {seq {space :p:80:p, par l {seq {comp btnAdd:3::p::p, space s:::p, comp btnUpdate:3::p:46:p}, comp panel2:::p:388:p}}, seq {space :p:82:p, par b {comp txtMaNV::b:p::p, comp label1::b:p::p}, space s:::p, par b {comp txtHoDem::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp txtTen::b:p::p, comp label4::b:p::p}, space s:::p, par b {comp txtGioiTinh::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp txtNgaySinh::b:p::p, comp label8::b:p::p}, space s:::p, par b {comp txtDiaChi::b:p::p, comp label5::b:p::p}, space s:::p, par b {comp txtSDT::b:p::p, comp label6::b:p::p}, space :::x, comp btnClear:::p:40:p}}, space ::121:x, comp scrollPane1:::p::p, space :::p}}"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Mã nhân viên:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Giới tính:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Họ đệm:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Tên:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Địa chỉ:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "Số điện thoại:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "Ngày sinh:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtMaNV"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtHoDem"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtGioiTinh"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtTen"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtNgaySinh"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtDiaChi"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtSDT"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "tblNhanVien"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "Mã NV" )
+								add( "Họ tên" )
+								add( "Ngày sinh" )
+								add( "Giới tính" )
+								add( "Số ĐT" )
+								add( "Địa chỉ" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tblNhanVienMouseClicked", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnAdd"
+						"text": "Thêm"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAdd", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnUpdate"
+						"text": "Cập nhật"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnUpdate", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnClear"
+						"text": "Clear"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnClear", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+						name: "panel2"
+						"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "Photo"
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+							"x": 130
+							"y": 180
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Nhân viên"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1855, 1085 )
+		} )
+	}
+}

@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model.SanPham;
+package model.sanpham;
 
-import model.GioHang.GioHangChiTiet;
-import model.HoaDon.hoaDonChiTiet;
+import model.giohang.GioHangChiTiet;
+import model.hoadon.hoaDonChiTiet;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,8 +21,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.Data;
-import model.khuyenMai.chiTietSPKhuyenMai;
-import org.hibernate.annotations.GenericGenerator;
+import model.khuyenmai.chiTietSPKhuyenMai;
 
 /**
  *

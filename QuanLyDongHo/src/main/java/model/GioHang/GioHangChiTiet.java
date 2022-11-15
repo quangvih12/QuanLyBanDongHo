@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model.GioHang;
+package model.giohang;
 
-import model.SanPham.ChiTietSanPham;
+import model.sanpham.ChiTietSanPham;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -17,7 +17,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.Data;
-import org.hibernate.type.BigDecimalType;
 
 /**
  *

@@ -44,7 +44,7 @@ public class HibernatUtil {
         properties.put(Environment.PASS, "111203");
         properties.put(Environment.SHOW_SQL, "true");
 //        gen DB tự động
-     //   properties.put(Environment.HBM2DDL_AUTO, "create");
+//        properties.put(Environment.HBM2DDL_AUTO, "create");
         //gen String id tự động
 //        @GenericGenerator(name = "generator", strategy = "guid", parameters = {})
 //        @GeneratedValue(generator = "generator")

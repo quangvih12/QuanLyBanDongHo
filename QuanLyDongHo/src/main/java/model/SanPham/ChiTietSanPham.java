@@ -92,6 +92,14 @@ public class ChiTietSanPham {
 
     @OneToMany(mappedBy = "chiTietSP", fetch = FetchType.EAGER)
     private List<chiTietSPKhuyenMai> list = new ArrayList<>();
+
+    public ChiTietSanPham(Integer id) {
+        this.id = id;
+    }
+
+    public ChiTietSanPham() {
+    }
     
 
+    
 }

@@ -62,4 +62,15 @@ public class GioHangChiTiet implements Serializable {
     @Column(name = "ngay_sua")
     private Date ngaySua;
 
+    public GioHangChiTiet(GioHang gioHang, ChiTietSanPham chiTietSP, int soLuong) {
+        this.gioHang = gioHang;
+        this.chiTietSP = chiTietSP;
+        this.soLuong = soLuong;
+    }
+
+    public GioHangChiTiet() {
+    }
+
+   
+
 }

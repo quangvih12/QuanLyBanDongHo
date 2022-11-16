@@ -71,4 +71,15 @@ public class GioHang {
     @OneToMany(mappedBy = "gioHang", fetch = FetchType.EAGER)
     List<GioHangChiTiet> list = new ArrayList<>();
 
+    public GioHang(String tenNguoiNhan, String DiaChi, String sdt) {
+        this.tenNguoiNhan = tenNguoiNhan;
+        this.DiaChi = DiaChi;
+        this.sdt = sdt;
+    }
+
+    public GioHang() {
+    }
+    
+    
+
 }
